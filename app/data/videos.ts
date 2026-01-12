@@ -4,6 +4,7 @@ export interface Video {
   description: string;
   url: string;
   category: string;
+  subcategory?: string;
 }
 
 export const categories: string[] = [
@@ -13,6 +14,15 @@ export const categories: string[] = [
   'Applocker',
   'Recursos Humanos',
   'Reservas'
+];
+
+export const subcategories: string[] = [
+  'Logística',
+  'Parcel',
+  'Mantenimiento',
+  'Gestión',
+  'Configuración',
+  'General'
 ];
 
 export const videos: Video[] = [
